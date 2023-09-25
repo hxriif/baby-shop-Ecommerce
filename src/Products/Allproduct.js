@@ -8,7 +8,7 @@ import {Button} from 'react-bootstrap'
 
 
 export const Allproduct=()=>{
-    const {babypro,setbabypro,serchTerm} = useContext(Mycontext);
+    const {babypro,serchTerm} = useContext(Mycontext);
     const navigate=useNavigate();
     
 return(
@@ -16,8 +16,8 @@ return(
     {/* <Navbar/> */}
     
     {/* <h1 style={{textAlign:"center",color:"#000000	"}}>BABYPRODUCTS</h1> */}
-      <section id="all" >
-        <div className="container py-5">
+      <section id="all" style={{backgroundColor:'black'}}>
+        <div className="container py-5" >
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4">
             {babypro.filter((item)=> {
               return serchTerm.toLowerCase() === " " ? item : item.name.toLowerCase().includes(serchTerm);

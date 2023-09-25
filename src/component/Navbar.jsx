@@ -21,7 +21,7 @@ export default function Navbar() {
 
  
   const {serchTerm, setSerchTerm,ulogin,setUlogin} = useContext(Mycontext)
-  console.log(serchTerm);
+  // console.log(serchTerm);
   const navigate = useNavigate()
   const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
 

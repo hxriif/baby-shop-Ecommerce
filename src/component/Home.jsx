@@ -21,14 +21,14 @@ function Home() {
             <Carousel />
             <Allproduct />
             <div className="ms-5">
-              <img
-              className="baby"
-                style={{height:'400px',width:'600px' }}
+  <img
+    className="baby img-fluid"  // Added img-fluid class for responsiveness
+    style={{maxHeight:'100vh',width:'100%' }}  // Changed height to maxHeight and set width to 100%
+    src="https://media.istockphoto.com/id/450417281/photo/newborn-baby-lying-in-daddys-hand.jpg?s=612x612&w=0&k=20&c=jpmGM9_2sdobHN3LckoaqboCuE1t2qmrgPXd0-VySaw="
+    alt=""
+  />
+</div>
 
-                src="https://media.istockphoto.com/id/450417281/photo/newborn-baby-lying-in-daddys-hand.jpg?s=612x612&w=0&k=20&c=jpmGM9_2sdobHN3LckoaqboCuE1t2qmrgPXd0-VySaw="
-                alt=""
-              />
-            </div>
             
           </>
         ) : (
@@ -40,17 +40,16 @@ function Home() {
       
       {/* <Productcategory/> */}
 
-       <img
-              decoding="async"
-              width="1270"
-              height="400"
-              src="https://websitedemos.net/baby-store-04/wp-content/uploads/sites/750/2020/12/baby-store-hero-baby-img.png"
-              className="attachment-full size-full wp-image-30"
-              alt=""
-              loading="lazy"
-              srcSet=" https://cdn.pixelbin.io/v2/black-bread-289bfa/XUefL6/wrkr/original/catalog/brandstore/Mothercare/333-2023_08_01-MC_WebBanner_AW23_1920x650_28.07.23_With_Logo_100.jpg"
-              sizes="(max-width: 640px) 100vw, 640px"
-            ></img>
+      <div class="container">
+  {/* <img
+    decoding="async"
+    class="img-fluid"
+    alt=""
+    loading="lazy"
+    src="https://cdn.pixelbin.io/v2/black-bread-289bfa/XUefL6/wrkr/original/catalog/brandstore/Mothercare/333-2023_08_01-MC_WebBanner_AW23_1920x650_28.07.23_With_Logo_100.jpg"
+  /> */}
+</div>
+
             </div>
 
       
